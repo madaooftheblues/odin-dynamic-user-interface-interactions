@@ -19,6 +19,7 @@
     },
     "homepage": "https://github.com/madaooftheblues/odin-dynamic-user-interface-interactions#readme",
     "devDependencies": {
+        "css-loader": "^6.10.0",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-config-standard": "^17.1.0",
@@ -26,6 +27,7 @@
         "eslint-plugin-n": "^16.6.2",
         "eslint-plugin-promise": "^6.1.1",
         "html-webpack-plugin": "^5.6.0",
+        "style-loader": "^3.3.4",
         "webpack-cli": "^5.1.4"
     }
 }
