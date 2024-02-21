@@ -6,11 +6,54 @@
 
 body {
     font-family: 'Noto Nastaliq Urdu', serif;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
 }
 
 .header {
+    grid-row: 1;
+    grid-column: 1 / span 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    text-align: center;
+}
+
+.hero {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-slider {
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+#hero-slider img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    display: none;
+}
+
+#hero-slider img.selected {
+    display: block;
+}
+
+.tri {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 60px solid green;
+    position: absolute;
+    z-index: 10;
+    transform: rotate(135deg);
+    top: 0;
+    right: 0;
 }
